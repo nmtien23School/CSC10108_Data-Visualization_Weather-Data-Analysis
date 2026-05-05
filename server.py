@@ -30,6 +30,9 @@ def dataset_raw():
 def dataset_cleaning():
     return render_template("cleaning.html", active_route="dataset-cleaning")
 
+@app.route("/analysis/")
+def analysis():
+    return render_template("analysis.html", active_route="analysis")
 
 @app.route("/styles/<path:path>")
 def serve_styles(path):
